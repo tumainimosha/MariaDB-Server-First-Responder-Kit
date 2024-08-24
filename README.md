@@ -1,10 +1,10 @@
 # MariaDB First Responder Kit
-<a name="header1"></a>
+<!-- <a name="header1"></a>
 [![licence badge]][licence]
 [![stars badge]][stars]
 [![forks badge]][forks]
 [![issues badge]][issues]
-[![contributors_badge]][contributors]
+[![contributors_badge]][contributors] -->
 
 Navigation
 
