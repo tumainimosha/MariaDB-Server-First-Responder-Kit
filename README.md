@@ -1,5 +1,4 @@
 # MariaDB First Responder Kit
-
 <a name="header1"></a>
 [![licence badge]][licence]
 [![stars badge]][stars]
@@ -8,8 +7,6 @@
 [![contributors_badge]][contributors]
 
 Navigation
-
-_Based on [Brent Ozar's SQL-Server-First-Responder-Kit](https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit) for SQL server, but for MariaDB._
 
 - How to Install the Scripts
 - How to Get Support
@@ -88,5 +85,7 @@ CALL sp_BlitzLock('2024-08-01 00:00:00', '2024-08-24 23:59:59');
 ### License
 
 The MariaDB First Responder Kit uses the MIT License.
+
+_Based on [Brent Ozar's SQL-Server-First-Responder-Kit](https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit) for SQL server, but for MariaDB._
 
 [_Back to top_](#header1)
