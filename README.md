@@ -40,7 +40,7 @@ When you find a bug or want something changed, submit an issue on the GitHub rep
 
 When you have a question about what the scripts found, first review the output documentation provided with each stored procedure. If you still have questions, post them in a MariaDB-focused community forum, and include your MariaDB version number, any errors, and relevant screenshots.
 
-[_Back to top_](#MariaDB First Responder Kit)
+[_Back to top_](#mariadb-first-responder-kit)
 
 ## Common Scripts
 
@@ -60,7 +60,7 @@ Output columns include:
 - URL: Links to more information.
 - Details: Additional dynamic information about the issue.
 
-[_Back to top_](#MariaDB First Responder Kit)
+[_Back to top_](#mariadb-first-responder-kit)
 
 ## Performance Tuning
 
@@ -83,7 +83,7 @@ Parameters you can use:
 CALL sp_BlitzLock('2024-08-01 00:00:00', '2024-08-24 23:59:59');
 ```
 
-[_Back to top_](#MariaDB First Responder Kit)
+[_Back to top_](#mariadb-first-responder-kit)
 
 ### License
 
@@ -91,4 +91,4 @@ The MariaDB First Responder Kit uses the MIT License.
 
 _Based on [Brent Ozar's SQL-Server-First-Responder-Kit](https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit) for SQL server, but for MariaDB._
 
-[_Back to top_](#MariaDB First Responder Kit)
+[_Back to top_](#mariadb-first-responder-kit)
