@@ -1,5 +1,6 @@
 # MariaDB First Responder Kit
-<!-- <a name="header1"></a>
+
+<!--
 [![licence badge]][licence]
 [![stars badge]][stars]
 [![forks badge]][forks]
@@ -8,11 +9,11 @@
 
 Navigation
 
-- How to Install the Scripts
-- How to Get Support
-- Common Scripts:
+- [How to Install the Scripts](#how-to-install-the-scripts)
+- [How to Get Support](#how-to-get-support)
+- [Common Scripts](#common-scripts):
   - [sp_Blitz: Overall Health Check](#sp_blitz-overall-health-check)
-- Performance Tuning:
+- [Performance Tuning](#performance-tuning):
   - [sp_BlitzWho: Deadlock Analysis](#sp_blitzlock-deadlock-analysis)
   - [sp_BlitzLock:  What Queries are Running Now](#sp_blitzlock-deadlock-analysis)
 - [License MIT](#license)
@@ -20,8 +21,8 @@ Navigation
 You're a DBA, sysadmin, or developer who manages MariaDB databases. It's your responsibility to ensure they are performing well and are secure. These tools help you understand what's going on in your MariaDB server.
 
 - When you want an overall health check, run [sp_Blitz](#sp_blitz-overall-health-check).
-- To analyze current running queries and identify potential issues, run sp_BlitzWho.
-- For deadlock analysis, use sp_BlitzLock.
+- To analyze current running queries and identify potential issues, run [sp_BlitzWho](#sp_blitzwho-what-queries-are-running-now).
+- For deadlock analysis, use [sp_BlitzLock](#sp_blitzlock-deadlock-analysis).
 
 To install, [download the latest release ZIP](https://github.com/tumainimosha/MariaDB-Server-First-Responder-Kit/releases), then run the SQL files in your desired database. (Typically, this would be a dedicated DBA database.)
 
@@ -39,9 +40,11 @@ When you find a bug or want something changed, submit an issue on the GitHub rep
 
 When you have a question about what the scripts found, first review the output documentation provided with each stored procedure. If you still have questions, post them in a MariaDB-focused community forum, and include your MariaDB version number, any errors, and relevant screenshots.
 
-[_Back to top_](#header1)
+[_Back to top_](#MariaDB First Responder Kit)
 
-## sp_Blitz: Overall Health Check
+## Common Scripts
+
+### sp_Blitz: Overall Health Check
 
 Run sp_Blitz daily or weekly for an overall health check. Just run it from your SQL client, and you'll get a prioritized list of issues on your MariaDB server.
 
@@ -57,7 +60,9 @@ Output columns include:
 - URL: Links to more information.
 - Details: Additional dynamic information about the issue.
 
-[_Back to top_](#header1)
+[_Back to top_](#MariaDB First Responder Kit)
+
+## Performance Tuning
 
 ### sp_BlitzWho: What Queries are Running Now
 
@@ -66,8 +71,6 @@ A more detailed alternative to basic SHOW PROCESSLIST. It includes information a
 ```sql
 CALL sp_BlitzWho();
 ```
-
-[_Back to top_](#header1)
 
 ### sp_BlitzLock: Deadlock Analysis
 
@@ -80,7 +83,7 @@ Parameters you can use:
 CALL sp_BlitzLock('2024-08-01 00:00:00', '2024-08-24 23:59:59');
 ```
 
-[_Back to top_](#header1)
+[_Back to top_](#MariaDB First Responder Kit)
 
 ### License
 
@@ -88,4 +91,4 @@ The MariaDB First Responder Kit uses the MIT License.
 
 _Based on [Brent Ozar's SQL-Server-First-Responder-Kit](https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit) for SQL server, but for MariaDB._
 
-[_Back to top_](#header1)
+[_Back to top_](#MariaDB First Responder Kit)
